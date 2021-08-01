@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div>
+    <img src="{{ url_for('video_feed') }}">
+    <form action="/takeface" method='POST'>
+        <input type='submit' value='撮影する'>
+    </form>
+</div>
+{% endblock %}
